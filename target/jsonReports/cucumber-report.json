@@ -1,0 +1,416 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 20,
+        "name": "",
+        "description": "",
+        "id": "validating-user-api\u0027s;;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1218200100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Create Add User payload with \"3\", \"Anne\", \"Anne\", \"Fayan\", \"fayan@email.com\", \"12345\", \"223756\" and \"1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 30
+                },
+                {
+                  "val": "Anne",
+                  "offset": 35
+                },
+                {
+                  "val": "Anne",
+                  "offset": 43
+                },
+                {
+                  "val": "Fayan",
+                  "offset": 51
+                },
+                {
+                  "val": "fayan@email.com",
+                  "offset": 60
+                },
+                {
+                  "val": "12345",
+                  "offset": 79
+                },
+                {
+                  "val": "223756",
+                  "offset": 88
+                },
+                {
+                  "val": "1",
+                  "offset": 101
+                }
+              ],
+              "location": "UserSteps.createUserPayload(int,String,String,String,String,String,String,int)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1232075700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Calling \"CreateUser\" with requestType \"POST\" to create user",
+            "match": {
+              "arguments": [
+                {
+                  "val": "CreateUser",
+                  "offset": 9
+                },
+                {
+                  "val": "POST",
+                  "offset": 39
+                }
+              ],
+              "location": "UserSteps.addUser(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 573706600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Verify user is created  with username as \"Anne\" and \"12345\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Anne",
+                  "offset": 42
+                },
+                {
+                  "val": "12345",
+                  "offset": 53
+                }
+              ],
+              "location": "UserSteps.verifyUserCreated(String,String)"
+            },
+            "matchedColumns": [
+              1,
+              5
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 72647900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Login to the system with user credentials using \"UserLoginAPI\" with requestType \"GET\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "UserLoginAPI",
+                  "offset": 49
+                },
+                {
+                  "val": "GET",
+                  "offset": 81
+                }
+              ],
+              "location": "UserSteps.loginUser(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 160900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User should be able to successfully logged into the system with statusCode \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 76
+                }
+              ],
+              "location": "UserSteps.verifyUserloggedIn(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 49200500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Verify \"GetUserAPIByUsername\" response when filter with username and requestType as \"GET\" then expected \"Anne\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "GetUserAPIByUsername",
+                  "offset": 8
+                },
+                {
+                  "val": "GET",
+                  "offset": 85
+                },
+                {
+                  "val": "Anne",
+                  "offset": 105
+                }
+              ],
+              "location": "UserSteps.verifyGetUserAPI(String,String,String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 121729500,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Call \"UpdateUser\" to update user lastName with \"Miller\" and phoneNumber with \"23456224\" where request type is \"PUT\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "UpdateUser",
+                  "offset": 6
+                },
+                {
+                  "val": "Miller",
+                  "offset": 48
+                },
+                {
+                  "val": "23456224",
+                  "offset": 78
+                },
+                {
+                  "val": "PUT",
+                  "offset": 111
+                }
+              ],
+              "location": "UserSteps.updateUserDetails(String,String,String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 29558200,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Verify user lastName and phoneNumber got updated with \"Miller\" and \"23456224\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Miller",
+                  "offset": 55
+                },
+                {
+                  "val": "23456224",
+                  "offset": 68
+                }
+              ],
+              "location": "UserSteps.verifyUpdatedDetails(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 25419900,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Calling \"CreateUerAsList\" with requestType \"POST\" and payload \"3\", \"XYZ\", \"John\", \"Miller\", \"fayan@email.com\", \"12345\", \"223756\" and \"1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "CreateUerAsList",
+                  "offset": 9
+                },
+                {
+                  "val": "POST",
+                  "offset": 44
+                },
+                {
+                  "val": "3",
+                  "offset": 63
+                },
+                {
+                  "val": "XYZ",
+                  "offset": 68
+                },
+                {
+                  "val": "John",
+                  "offset": 75
+                },
+                {
+                  "val": "Miller",
+                  "offset": 83
+                },
+                {
+                  "val": "fayan@email.com",
+                  "offset": 93
+                },
+                {
+                  "val": "12345",
+                  "offset": 112
+                },
+                {
+                  "val": "223756",
+                  "offset": 121
+                },
+                {
+                  "val": "1",
+                  "offset": 134
+                }
+              ],
+              "location": "UserSteps.createUserListPayload(String,String,int,String,String,String,String,String,String,int)"
+            },
+            "matchedColumns": [
+              0,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 45000300,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Verify created user details \"XYZ\", \"John\" and \"Miller\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "XYZ",
+                  "offset": 29
+                },
+                {
+                  "val": "John",
+                  "offset": 36
+                },
+                {
+                  "val": "Miller",
+                  "offset": 47
+                }
+              ],
+              "location": "UserSteps.verifyCreatedUserList(String,String,String)"
+            },
+            "matchedColumns": [
+              8,
+              9,
+              10
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 30077200,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Call \"DeleteUser\" with requestType \"DELETE\" to delete with user",
+            "match": {
+              "arguments": [
+                {
+                  "val": "DeleteUser",
+                  "offset": 6
+                },
+                {
+                  "val": "DELETE",
+                  "offset": 36
+                }
+              ],
+              "location": "UserSteps.deleteUser(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 18657600,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Verify user is deleted by calling \"GetUserAPIByUsername\" with requestType \"GET\" where response should be \"404\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "GetUserAPIByUsername",
+                  "offset": 35
+                },
+                {
+                  "val": "GET",
+                  "offset": 75
+                },
+                {
+                  "val": "404",
+                  "offset": 106
+                }
+              ],
+              "location": "UserSteps.verifyUserDeleted(String,String,int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 20035300,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Verify user logout of the system by calling \"UserLogoutAPI\" with requestType \"GET\" where response should be \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "UserLogoutAPI",
+                  "offset": 45
+                },
+                {
+                  "val": "GET",
+                  "offset": 78
+                },
+                {
+                  "val": "200",
+                  "offset": 109
+                }
+              ],
+              "location": "UserSteps.verifyLogout(String,String,int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Validating User API\u0027s",
+    "description": "",
+    "id": "validating-user-api\u0027s",
+    "keyword": "Feature",
+    "uri": "src/test/java/features/User.feature"
+  }
+]

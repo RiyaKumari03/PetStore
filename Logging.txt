@@ -1,0 +1,42 @@
+Request method:	POST
+Request URI:	http://localhost:8080/api/v3/user
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/xml, text/xml, application/xhtml+xml
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 3,
+    "username": "Anne",
+    "firstName": "Anne",
+    "lastName": "Fayan",
+    "email": "fayan@email.com",
+    "password": "12345",
+    "phone": "223756",
+    "userStatus": 1
+}
+HTTP/1.1 200 OK
+Date: Mon, 31 May 2021 17:30:04 GMT
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Access-Control-Expose-Headers: Content-Disposition
+Content-Type: application/json
+Content-Length: 141
+Server: Jetty(9.4.9.v20180320)
+
+{
+    "id": 3,
+    "username": "Anne",
+    "firstName": "Anne",
+    "lastName": "Fayan",
+    "email": "fayan@email.com",
+    "password": "12345",
+    "phone": "223756",
+    "userStatus": 1
+}
