@@ -10,12 +10,12 @@ Eclipse as the preferred IDE for writing java code.
 Getting Started
 Setup your machine.
 
+# Installation
 Install JDK 1.8
 Install Eclipse Neon (Community edition should suffice)
 Install Cucumber Eclipse as plugin
 Install Natural 0.9
-Running tests
-Run tests from command line: gradle clean build runTests -Dbrowser=chrome -Ptags=@Test
+
 
 Run tests from Eclipse:
 
@@ -27,8 +27,11 @@ To run all the feature at once update the runner with  features = "src/test/java
 Report will be found here: 
 Text file report - /PetStoreFrameWork/Logging.txt
 HTML report - /PetStoreFrameWork/target/cucumber-html-reports/overview-feature.html
-Tests
-[Assignment 2]
+
+# [Assignment 2]
+
+# TEST CASES 
+
 End to End Test Case is created for this each scenario specifies one test case
 
 Pet Feature File
