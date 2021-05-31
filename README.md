@@ -34,11 +34,11 @@ HTML report - /PetStoreFrameWork/target/cucumber-html-reports/overview-feature.h
 
 End to End Test Case is created for this each scenario specifies one test case
 
-Pet Feature File
-TestCase-1: Add Pet to store, then validate GET, UPDATE and DELETE feature end to end
+Pet Feature File \n
+TestCase-1: Add Pet to store, then validate GET, UPDATE and DELETE feature end to end \n
 
-Store Order Feature File
-TestCase-2: Create Store, then validate GET and DELETE feature end to end
+Store Order Feature File \n
+TestCase-2: Create Store, then validate GET and DELETE feature end to end \n
 
-User Feature
-TestCase-3: Add User to the system, then validate GET, UPDATE, LOGIN, LOGOUT and DELETE feature end to end
+User Feature \n
+TestCase-3: Add User to the system, then validate GET, UPDATE, LOGIN, LOGOUT and DELETE feature end to end \n
